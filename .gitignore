@@ -1,0 +1,6 @@
+*.pyc
+lookbackstory/settings.py
+dashboard/migrations/*
+UserDashboard/migrations/*
+UserAuthentication/migrations/*
+db.sqlite3
