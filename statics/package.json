@@ -1,0 +1,25 @@
+{
+  "name": "statics",
+  "version": "1.0.0",
+  "description": "this is statics for the application, installed by npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monyoudom/LookBackStory.git"
+  },
+  "keywords": [
+    "LookBackStory"
+  ],
+  "author": "Mony Oudom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monyoudom/LookBackStory/issues"
+  },
+  "homepage": "https://github.com/monyoudom/LookBackStory#readme",
+  "dependencies": {
+    "uikit": "^3.0.0-beta.35"
+  }
+}

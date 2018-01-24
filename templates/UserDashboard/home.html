@@ -34,26 +34,15 @@
                     </p>
                 </div>
             </div>
+            
             <div class="uk-padding">
                 <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid uk-height-match="target: > a > img">
-                    <a href="#">
-                        <img class="uk-responsive-height uk-responsive-width" src="{% static 'UserDashboard/image/grid-demo.jpg' %}" alt="grid demo">
-                     </a>
-                    <a href="#">
-                        <img class="uk-responsive-height uk-responsive-width" src="{% static 'UserDashboard/image/grid-demo.jpg' %}" alt="grid demo">
-                    </a>
-                    <a href="#">
-                        <img class="uk-responsive-height uk-responsive-width" src="{% static 'UserDashboard/image/grid-demo.jpg' %}" alt="grid demo">
-                    </a>
-                    <a href="#">
-                        <img class="uk-responsive-height uk-responsive-width" src="{% static 'UserDashboard/image/grid-demo.jpg' %}" alt="grid demo">
-                     </a>
-                    <a href="#">
-                        <img class="uk-responsive-height uk-responsive-width" src="{% static 'UserDashboard/image/grid-demo.jpg' %}" alt="grid demo">
-                    </a>
-                    <a href="#">
-                        <img class="uk-responsive-height uk-responsive-width" src="{% static 'UserDashboard/image/grid-demo.jpg' %}" alt="grid demo">
-                    </a>
+                    {% for book in books %}
+                    
+                        <a href="{% url 'view_book_detail' book.id %}">
+                            <img class="uk-responsive-height uk-responsive-width" src= {{book.book_cover.url}} alt= {{book.book_title}}>
+                         </a>
+                    {% endfor %}
                 </div>
             </div>
             <div class="uk-padding">
