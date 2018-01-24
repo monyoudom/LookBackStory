@@ -18,10 +18,25 @@ def dashboard(request):
     
     return render(request,'UserDashboard/home.html')
 
-def viewBookDetail(request,book_id):
+def view_book_detail(request,book_id):
     print book_id
     pages = Page.objects.filter(pk__in=book_id)
     print pages
 
     return render(request,'UserDashboard/bookdetail.html',{'pages' : pages})
+
+def my_story(request):
+    return render(request,'UserDashboard/mystory.html')
+def my_daily(request):
+    return render(request,'UserDashboard/mydaily.html')
+def my_friends(request):
+    return render(request,'UserDashboard/myfriends.html')
+def my_blog(request):
+    return render(request,'UserDashboard/myblog.html')
+def my_profile(request):
+    return render(request,'UserDashboard/myprofile.html')
+
+
+
+
     
