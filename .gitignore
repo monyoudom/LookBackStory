@@ -5,3 +5,4 @@ UserDashboard/migrations/*
 UserAuthentication/migrations/*
 db.sqlite3
 statics/node_modules/*
+media/*
